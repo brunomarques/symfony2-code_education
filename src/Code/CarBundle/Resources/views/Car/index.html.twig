@@ -1,0 +1,23 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}CodeCarBundle:Car:index{% endblock %}
+
+{% block body %}
+<h1>Lista de modelos de veículos</h1>
+<table class="table table-condensed table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+        </tr>
+    </thead>
+    <tbody>
+{% for key,value in lista %}
+    <tr>
+        <td>{{ key }}</td>
+        <td>{{ value }}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+{% endblock %}
