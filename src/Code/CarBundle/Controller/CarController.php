@@ -9,7 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class CarController extends Controller
 {
     /**
-     * @Route("/lista-de-carros")
+     * @Route("/")
      * @Template()
      */
     public function indexAction()
