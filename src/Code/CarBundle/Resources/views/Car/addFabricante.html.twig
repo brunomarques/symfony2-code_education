@@ -1,0 +1,23 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}CodeCarBundle:Car:addCarro{% endblock %}
+
+{% block body %}
+    <h1>Inserindo Fabricante</h1>
+    <table class="table table-condensed table-hover table-striped">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Carro</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for fabricante in fabricantes %}
+            <tr>
+                <td>{{ fabricante.id }}</td>
+                <td>{{ fabricante.nome }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

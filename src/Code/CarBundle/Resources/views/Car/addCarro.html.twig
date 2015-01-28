@@ -1,0 +1,27 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}CodeCarBundle:Car:addCarro{% endblock %}
+
+{% block body %}
+    <h1>Inserindo carros</h1>
+    <table class="table table-condensed table-hover table-striped">
+        <thead>
+        <tr>
+            <th>Modelo</th>
+            <th>Fabricante</th>
+            <th>Ano</th>
+            <th>Cor</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for carro in carros %}
+            <tr>
+                <td>{{ carro.modelo }}</td>
+                <td>{{ carro.fabricante }}</td>
+                <td>{{ carro.ano }}</td>
+                <td>{{ carro.cor }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
