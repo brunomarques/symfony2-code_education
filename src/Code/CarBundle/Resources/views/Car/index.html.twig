@@ -9,13 +9,17 @@
         <tr>
             <th>Marca</th>
             <th>Modelo</th>
+            <th>Ano</th>
+            <th>Cor</th>
         </tr>
     </thead>
     <tbody>
-{% for key,value in lista %}
+{% for carro in carros %}
     <tr>
-        <td>{{ key }}</td>
-        <td>{{ value }}</td>
+        <td>{{ carro.nome }}</td>
+        <td>{{ carro.modelo }}</td>
+        <td>{{ carro.ano }}</td>
+        <td>{{ carro.cor }}</td>
     </tr>
 {% endfor %}
     </tbody>
